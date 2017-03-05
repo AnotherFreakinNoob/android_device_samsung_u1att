@@ -32,7 +32,7 @@ BOARD_HAS_BLN := true
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
-TARGET_KERNEL_CONFIG := cyanogenmod_u1att_defconfig
+TARGET_KERNEL_CONFIG := lineageos_u1att_defconfig
 
 # Selinux
 BOARD_SEPOLICY_DIRS += device/samsung/u1att/selinux
