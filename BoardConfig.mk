@@ -17,22 +17,25 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
--include device/samsung/galaxys2-common/BoardCommonConfig.mk
+-include device/samsung/smdk4210-common/BoardCommonConfig.mk
 
-TARGET_BOARD_INFO_FILE := device/samsung/i777/board-info.txt
+TARGET_BOARD_INFO_FILE := device/samsung/u1att/board-info.txt
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i777/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/u1att/bluetooth
 
 # NFC
 BOARD_HAVE_NFC := true
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-TARGET_KERNEL_CONFIG := cyanogenmod_i777_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
+TARGET_KERNEL_CONFIG := cyanogenmod_u1att_defconfig
 
-# assert
-TARGET_OTA_ASSERT_DEVICE := i777,SGH-I777,SGH-S959G
+# Selinux
+BOARD_SEPOLICY_DIRS += device/samsung/u1att/selinux
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := i777,s959g,u1att,SGH-I777,SGH-S959G
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/i777/BoardConfigVendor.mk
+-include vendor/samsung/u1att/BoardConfigVendor.mk

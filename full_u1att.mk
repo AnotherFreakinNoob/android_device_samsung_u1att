@@ -23,11 +23,11 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, device/samsung/i777/i777.mk)
+$(call inherit-product, device/samsung/u1att/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_i777
-PRODUCT_DEVICE := i777
+PRODUCT_NAME := full_u1att
+PRODUCT_DEVICE := u1att
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SGH-I777

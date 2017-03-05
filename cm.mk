@@ -25,13 +25,17 @@ TARGET_SCREEN_WIDTH := 480
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/i777/full_i777.mk)
+$(call inherit-product, device/samsung/u1att/full_u1att.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := i777
-PRODUCT_NAME := cm_i777
+PRODUCT_DEVICE := u1att
+PRODUCT_NAME := cm_u1att
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SGH-I777
 
 # Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I777 TARGET_DEVICE=SGH-I777 BUILD_FINGERPRINT=samsung/SGH-I777/SGH-I777:4.0.3/IML74K/XXLPQ:user/release-keys PRIVATE_BUILD_DESC="SGH-I777-user 4.0.3 IML74K XXLPQ release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=SGH-I777 \
+    TARGET_DEVICE=SGH-I777 \
+    BUILD_FINGERPRINT="samsung/SGH-I777/SGH-I777:4.1.2/JZO54K/I777UCMD8:user/release-keys" \
+    PRIVATE_BUILD_DESC="SGH-I777-user 4.1.2 JZO54K I777UCMD8 release-keys"
