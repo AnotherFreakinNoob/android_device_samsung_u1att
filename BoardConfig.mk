@@ -38,7 +38,7 @@ TARGET_KERNEL_CONFIG := lineageos_u1att_defconfig
 BOARD_SEPOLICY_DIRS += device/samsung/u1att/selinux
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := i777,s959g,u1att,SGH-I777,SGH-S959G
+#TARGET_OTA_ASSERT_DEVICE := i777,s959g,u1att,SGH-I777,SGH-S959G
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/u1att/BoardConfigVendor.mk
